@@ -25,6 +25,7 @@ NLP project to identify COVID-19 correlates of protection from abstracts.
     - [ ] Filter on publication type
     - [ ] Show NER annotations within text
     - [ ] Sort by date, relevance probability score
+    - [ ] Include date when last updated
  - [ ] Use Plotly for charts
     - Plots to generate?
 
