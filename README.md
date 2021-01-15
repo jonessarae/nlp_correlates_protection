@@ -43,7 +43,7 @@ STUDY
  - [ ] Create dashboard with Streamlit with the following features:
     - [ ] Filter on publication type
     - [ ] Show NER annotations within text
-    - [ ] Sort by date, relevance probability score
+    - [ ] Sort by date, relevance probability score, source, dates?
     - [ ] Include date when last updated
  - [ ] Use Plotly for charts
     - Plots to generate?
