@@ -37,6 +37,7 @@ NLP project to identify COVID-19 correlates of protection from abstracts.
  - Include a keyword search
  - Identify duration of immunity
  - Determine if vaccine has a positive, negative, or neutral effect on identified correlate
+ - Option to download selected PMIDS as csv
 
 
 ## Acknowledgements
