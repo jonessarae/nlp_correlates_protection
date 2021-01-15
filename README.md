@@ -5,7 +5,7 @@ NLP project to identify COVID-19 correlates of protection from abstracts.
 
 ## Table of Contents
 
-##
+## File Directory
 
 <pre>
 STUDY
@@ -14,7 +14,7 @@ STUDY
     │   ├── Unaligned reads
     │   └── Aligned.sam/bam
     ├── Sample_2
-    │   |─ Unaligned reads
+    │   ├── Unaligned reads
     │   └── Aligned.sam/bam
     ├── Sample_3
     │   ├── Unaligned reads
