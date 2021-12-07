@@ -102,7 +102,7 @@ Files that are generated:
 
  - *entities.xlsx*: excel file with entities from customized NER model
 
- - entities_with_categories_<date>.xlsx: excel file with entities and their categories for Tableau or dashboard of choice
+ - *entities_with_categories.xlsx*: excel file with entities and their categories for Tableau or dashboard of choice
 
 ## Features to add later
  
