@@ -1,0 +1,21 @@
+## This requirements file can be used to make the conda environment needed for the Correlates of Protection against SARS-CoV-2 Project
+## After installing these packages, run:
+# pip install https://s3-us-west-2.amazonaws.com/ai2-s2-scispacy/releases/v0.3.0/en_core_sci_lg-0.3.0.tar.gz
+# to complete the environment
+
+## If en_core_sci_lg is already downloaded to the environment, run:
+# en-core-sci-lg==0.3.0
+
+jupyter==1.0.0
+nltk==3.4.4
+numpy==1.19.4
+openpyxl==3.0.6
+pandas==1.1.5
+pip==20.2.4
+plac==0.9.6
+python==3.7.3
+spacy==2.3.2
+xlrd==1.2.0
+scikit-learn==0.23.2
+fuzzywuzzy==0.18.0
+scispacy==0.3.0
