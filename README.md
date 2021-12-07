@@ -3,7 +3,7 @@ Project to identify COVID-19 correlates of protection from abstracts using Natur
 
 ## Team
 
-Sydney Foote
+Sydney Foote 
 Sara Jones
 
 ## Purpose
