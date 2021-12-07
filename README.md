@@ -9,7 +9,7 @@ Sara Jones
 
 ## Purpose
 
-The purpose of this pipeline is for identifying publications relevant to the topic of correlates of protection and extracting entities of the following categories:
+The purpose of this pipeline is for identifying publications relevant to the topic of correlates of protection and extracting entities for the following categories:
  - animals
  - assays
  - immune correlates
