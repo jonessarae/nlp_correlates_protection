@@ -110,6 +110,7 @@ Files that are generated:
  - Create a classifier to detect review/editorials 
  - Identify duration of immunity
  - Determine if vaccine has a positive, negative, or neutral effect on identified correlate
+ - Add another category for entities
  
 ## License
 
