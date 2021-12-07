@@ -82,21 +82,21 @@ python run_pipeline.py -input isearch_test.xlsx --output results
 
 Parameters:
 Required:
--input: path to publication file (iSearch excel file)
+ - input: path to publication file (iSearch excel file)
 Optional:
---output: path to result folder
+ -- output: path to result folder
 Other:
--h, --help: help message
+ - h, --help: help message
 
 Files that are generated:
 
- - covid_relevant_abstracts_<date>.xlsx: excel file of COVID-19 publication data identified as relevant by classifier
+ - *covid_relevant_abstracts_<date>.xlsx*: excel file of COVID-19 publication data identified as relevant by classifier
 
- - covid_relevant_abstracts_processed_<date>.xlsx: excel file of relevant processed COVID-19 publication data for Tableau or dashboard of choice
+ - *covid_relevant_abstracts_processed_<date>.xlsx*: excel file of relevant processed COVID-19 publication data for Tableau or dashboard of choice
 
- - entities_<date>.xlsx: excel file with entities from customized NER model
+ - *entities_<date>.xlsx*: excel file with entities from customized NER model
 
- - entities_with_categories_<date>.xlsx: excel file with entities and their categories for Tableau or dashboard of choice
+ - *entities_with_categories_<date>.xlsx*: excel file with entities and their categories for Tableau or dashboard of choice
 
 ## Features to add later
  
