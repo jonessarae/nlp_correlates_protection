@@ -1,62 +1,109 @@
 # COVID-19 Correlates of Protection
 NLP project to identify COVID-19 correlates of protection from abstracts.
 
+## Team
 
+Sydney Foote
+Sara Jones
 
-## Table of Contents
+## Purpose
 
-## File Directory
+The purpose of this pipeline is for identifying publications relevant to the topic of correlates of protection and extracting entities of the following categories:
+ - animals
+ - assays
+ - immune correlates
+ - vaccines
+
+## To Install
+
+Python (pipeline used 3.7.3) and packages with versions are listed in environment.yml.
+
+### To install with conda
+
+To install with conda, you will need conda version >= 4.6.3 (pipeline used 4.6.3).
+
+To install with environment.yml:
 
 <pre>
-STUDY
-└── READS
-    ├── Sample_1
-    │   ├── Unaligned reads
-    │   └── Aligned.sam/bam
-    ├── Sample_2
-    │   ├── Unaligned reads
-    │   └── Aligned.sam/bam
-    ├── Sample_3
-    │   ├── Unaligned reads
-    │   └── Aligned.sam/bam
-    └── Sample_4
-        ├── Unaligned reads
-        └── Aligned.sam/bam
-</pre>
+conda env create -f environment.yml
+<\pre>
 
+To install without environment.yml:
 
-## TO DO
+<pre>
+# add conda-forge channel
+conda config --append channels conda-forge
 
- 
- - [ ] Create a web scraper to pull iSearch records daily - use AWS Lambda
- - [ ] Craete a web scraper to pull in latest vaccine data, Milken Institute
- - [ ] Preprocess records:
-    - [ ] Clean up text such as removing large whitespaces
-    - [ ] Use right encoding to show special characters
-    - [ ] Detect non-English or empty abstracts
-    - [ ] Get hyperlinks from excel files
- - [x] Create a classifier to find relevant publications and keep if above a certain threshold
- - [ ] Save data in SQLite or CSV?
- - [ ] Create a customized NER model for entities: vaccine, correlate, animal, and assay
- - [ ] Add rules (i.e. identify clincial trials)
- - [ ] Run each relevant publication (specifically non-review publications) through NER model and save identified entities
- - [ ] Create dashboard with Streamlit with the following features:
-    - [ ] Filter on publication type
-    - [ ] Show NER annotations within text
-    - [ ] Sort by date, relevance probability score, source, dates?
-    - [ ] Include date when last updated
- - [ ] Use Plotly for charts
-    - Plots to generate?
+# create environment
+conda create -n covid_env python=3.7.3 pandas numpy openpyxl jupyter spacy=2.3.2 scikit-learn=0.23.2 nltk=3.4.4 fuzzywuzzy xlrd python-levenshtein -y
 
+# check for environment
+conda info --e
+
+# activate environment
+conda activate covid_env
+
+# install scispacy and en_core_sci_lg
+pip install scispacy==0.3.0
+pip install https://s3-us-west-2.amazonaws.com/ai2-s2-scispacy/releases/v0.3.0/en_core_sci_lg-0.3.0.tar.gz
+<\pre>
+
+When finished or no longer need environment, run the following commands:
+
+<pre>
+# deactivate environment
+conda deactivate
+
+# remove environment
+conda env remove --name covid_env
+<\pre>
+
+### To install with Docker
+
+TO DO
+
+### To install with pip
+
+TO DO
+
+## To Use
+
+This pipeline takes in excel files of publication and preprint data from iSearch COVID-19 portfolio (https://icite.od.nih.gov/covid19/search/) as input.
+
+<pre>
+python run_pipeline.py -input <path/to/file> --output <path/to/folder> [options]
+<\pre>
+
+Example:
+<pre>
+python run_pipeline.py -input isearch_test.xlsx --output results
+<\pre>
+
+Parameters:
+Required:
+-input: path to publication file (iSearch excel file)
+Optional:
+--output: path to result folder
+Other:
+-h, --help: help message
+
+Files that are generated:
+
+ - covid_relevant_abstracts_<date>.xlsx: excel file of COVID-19 publication data identified as relevant by classifier
+
+ - covid_relevant_abstracts_processed_<date>.xlsx: excel file of relevant processed COVID-19 publication data for Tableau or dashboard of choice
+
+ - entities_<date>.xlsx: excel file with entities from customized NER model
+
+ - entities_with_categories_<date>.xlsx: excel file with entities and their categories for Tableau or dashboard of choice
+
+## Features to add later
  
- 
- Features to add later if we have time
- 
+ - Create a web scraper to pull iSearch records daily or weekly
  - Create a classifier to detect review/editorials 
- - Include a keyword search
  - Identify duration of immunity
  - Determine if vaccine has a positive, negative, or neutral effect on identified correlate
- - Option to download selected PMIDS as csv
+ 
+## License
 
-
-## Acknowledgements
+This project is MIT licensed.
