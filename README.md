@@ -84,15 +84,15 @@ Parameters:
 
 Required:
 
--input: path to publication file (iSearch excel file)
+*-input*: path to publication file (iSearch excel file)
  
 Optional:
 
- --output: path to result folder
+ *--output*: path to result folder
  
 Other:
 
- -h, --help: help message
+ *-h, --help*: help message
 
 Files that are generated:
 
