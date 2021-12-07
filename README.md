@@ -24,13 +24,13 @@ To install with conda, you will need conda version >= 4.6.3 (pipeline used 4.6.3
 
 To install with environment.yml:
 
-<pre>
+```
 conda env create -f environment.yml
-<\pre>
+```
 
 To install without environment.yml:
 
-<pre>
+```
 # add conda-forge channel
 conda config --append channels conda-forge
 
@@ -46,17 +46,17 @@ conda activate covid_env
 # install scispacy and en_core_sci_lg
 pip install scispacy==0.3.0
 pip install https://s3-us-west-2.amazonaws.com/ai2-s2-scispacy/releases/v0.3.0/en_core_sci_lg-0.3.0.tar.gz
-<\pre>
+```
 
 When finished or no longer need environment, run the following commands:
 
-<pre>
+```
 # deactivate environment
 conda deactivate
 
 # remove environment
 conda env remove --name covid_env
-<\pre>
+```
 
 ### To install with Docker
 
@@ -70,14 +70,14 @@ TO DO
 
 This pipeline takes in excel files of publication and preprint data from iSearch COVID-19 portfolio (https://icite.od.nih.gov/covid19/search/) as input.
 
-<pre>
+```
 python run_pipeline.py -input <path/to/file> --output <path/to/folder> [options]
-<\pre>
+```
 
 Example:
-<pre>
+```
 python run_pipeline.py -input isearch_test.xlsx --output results
-<\pre>
+```
 
 Parameters:
 Required:
