@@ -96,13 +96,13 @@ Other:
 
 Files that are generated:
 
- - *covid_relevant_abstracts_<date>.xlsx*: excel file of COVID-19 publication data identified as relevant by classifier
+ - *covid_relevant_abstracts.xlsx*: excel file of COVID-19 publication data identified as relevant by classifier
 
- - *covid_relevant_abstracts_processed_<date>.xlsx*: excel file of relevant processed COVID-19 publication data for Tableau or dashboard of choice
+ - *covid_relevant_abstracts_processed.xlsx*: excel file of relevant processed COVID-19 publication data for Tableau or dashboard of choice
 
- - *entities_<date>.xlsx*: excel file with entities from customized NER model
+ - *entities.xlsx*: excel file with entities from customized NER model
 
- - *entities_with_categories_<date>.xlsx*: excel file with entities and their categories for Tableau or dashboard of choice
+ - entities_with_categories_<date>.xlsx: excel file with entities and their categories for Tableau or dashboard of choice
 
 ## Features to add later
  
