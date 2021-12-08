@@ -1,5 +1,5 @@
 # NLP Correlates of Protection
-Project to identify COVID-19 correlates of protection from abstracts using Natural Language Processing (NLP).
+Pipeline to identify COVID-19 correlates of protection from abstracts using Natural Language Processing (NLP).
 
 ## Team
 
